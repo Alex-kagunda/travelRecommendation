@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TravelBloom</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+        <div class="background-image" style="background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+            <div class="fallback-message">Image failed to load. Please check the URL.</div>
+        </div>
+        <div class="home-content">
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <h1>EXPLORE DREAM DESTINATIONS</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destinations that captivates the heart and ignites a sense of wonder.</p>
+            <button class="book-now">BOOK NOW</button>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <div id="results" class="results-container"></div>
+
+    <!-- About Us Section -->
+    <section id="about" class="content-section">
+        <div class="background-image" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+            <div class="fallback-message">Image failed to load. Please check the URL.</div>
+        </div>
+        <div class="about-content">
+            <h1>ABOUT US</h1>
+            <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services and products to our customers. Our mission is to provide the best experience for people traveling to different destinations around the world.</p>
+            <div class="team">
+                <div class="team-member">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <h3>Celia Thomas</h3>
+                    <p>Team Lead</p>
+                </div>
+                <div class="team-member">
+                    <h3>Mika Tysen</h3>
+                    <p>Delivery Head</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="content-section">
+        <div class="background-image" style="background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+            <div class="fallback-message">Image failed to load. Please check the URL.</div>
+        </div>
+        <div class="contact-content">
+            <h1>CONTACT US</h1>
+            <p>Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals. Feel free to explore our website to learn more about what we offer.</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
